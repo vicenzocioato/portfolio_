@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vicenzo Cioato | Dev Front-end</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+        integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+    <div id="cursor"></div>
+
+    <div class="sidebar">
+        <span class="pag"></span>
+        <span class="pag"></span>
+        <span class="pag"></span>
+        <span class="pag"></span>
+        <span class="pag"></span>
+    </div>
+
+
+    <svg id="Meusvg">
+        <circle id="svg" cx="50" cy="50" r="40" stroke="white" stroke-width="4" fill="none" />
+    </svg>
+
+    <header>
+        <a href="#comeco" class="head">
+            <div>Início</div>
+        </a>
+        <a href="#skills" class="head">
+            <div>Tecnologias</div>
+        </a>
+        <a href="#destaques" class="head">
+            <div>Projetos</div>
+        </a>
+        <a href="#timeline" class="head">
+            <div>Educação</div>
+        </a>
+
+        <a href="#sobre" class="head">
+            <div>Sobre</div>
+        </a>
+
+        <a href="#redes" class="head">
+            <div>Contatos</div>
+        </a>
+
+    </header>
+    <section id="comeco">
+        <div id="conteudo">
+            <aside>
+                <p class="adj">PROGRAMADOR,</p>
+                <p class="adj">FRONT-END,</p>
+                <p class="adj">ESTUDANTE.</p>
+                <p>Me chamo Vicenzo de Souza Cioato, tenho 16 anos e sou aluno do IFRS <i>campus</i> Bento Gonçalves,
+                    pelo curso de técnico em informática para internet.</p>
+                <a class="dwl" href="Currículo - Vicenzo Cioato.pdf" download>Gerar CV</a>
+            </aside>
+
+            
+
+        </div>
+    </section>
+    <section id="skills" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="titulo" style="color: white;">Principais tecnologias</div>
+
+        <div class="skill"><i class="fa-brands fa-html5"></i></div>
+        <div class="skill"><i class="fa-brands fa-css3"></i></div>
+        <div class="skill"><i class="fa-brands fa-js"></i></div>
+        <div class="skill"><i class="fa-brands fa-php"></i></div>
+        <div class="skill"><i class="fa-solid fa-database"></i></div>
+        <div class="skill"><i class="fa-brands fa-github"></i></div>
+    </section>
+
+    <section id="destaques" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="titulo" id="title">Alguns projetos</div>
+
+        <div class="container-projetos">
+            <div class="projeto">
+                <a href="https://vicenzocioato.github.io/xmb-ps3/">
+                    <img src="src/ps3.webp" id="ps3" alt="">
+                    <label for="ps3">XMB</label>
+                    <p>Recriação da interface do PS3 utilizando HTML, CSS e JS.</p>
+                </a>
+            </div>
+
+            <div class="projeto">
+                <a href="https://vicenzocioato.github.io/alcatraz---remake/">
+                    <img src="src/alcatraz.webp" id="alcatraz" alt="">
+                    <label for="alcatraz">Alcatraz</label>
+                    <p>Versão virtual do jogo de tabuleiro "alcatraz".</p>
+                </a>
+            </div>
+
+            <div class="projeto">
+                <a href="../labirinto/">
+                    <img src="src/labirinto.png" id="labirinto" alt="">
+                    <label for="labirinto">Labirinto</label>
+                    <p>Jogo de labirinto usando a posição do mouse para controlar.</p>
+                </a>
+            </div>
+
+            <div class="projeto">
+                <a href="https://vicenzocioato.github.io/brasileirao2026/">
+                    <img src="src/gremioprint.png" id="temas" alt="">
+                    <label for="temas">Brasileirão</label>
+                    <p>Página com informações e temas adaptativos dos 20 times do Brasileirão 2026.</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline" data-aos-duration="1200">
+        <div id="titletl" class="titulo">Educação</div>
+        <div id="tl">
+
+            <div class="linha"></div>
+
+            <div class="item">
+                <div class="circulo"></div>
+                <div class="legenda">
+                    <p class="ano">2024</p>
+                    <p>HTML, CSS, JavaScript e fundamentos básicos da computação.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="circulo"></div>
+                <div class="legenda">
+                    <p class="ano">2025</p>
+                    <p>PHP, MySQL, UML e interfaces.</p>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="circulo"></div>
+                <div class="legenda">
+                    <p class="ano">2026</p>
+                    <p>Redes, react (em processo de aprendizado!)</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div id="sobrettl" class="titulo">Sobre</div>
+        <aside>
+            <p>
+                Desenvolvedor Front-end, apaixonado por tecnologia. Meu interesse por programação começou ainda antes do
+            ensino médio, quando tive o primeiro contato com desenvolvimento, mas foi no IFRS que realmente comecei na
+            programação.
+            </p>
+            <p>
+                Desde então, venho explorando diferentes tecnologias do sistema web, com foco principal em HTML, CSS e
+            JavaScript. Ao longo do tempo também tive contato com ferramentas e tecnologias como Mysql e PHP, além de
+            conceitos fundamentais de desenvolvimento e organização de projetos.</p>
+            <p>
+                Durante minha jornada de aprendizado, desenvolvi diversos projetos práticos que me ajudaram a consolidar
+            conhecimentos em interface, responsividade, lógica de programação e experiência do usuário, sempre buscando
+            aprender algo novo a cada desafio.</p>
+        </aside>
+
+        <figure class="borda-l">
+                <img src="src/foto.jpg" alt="Foto que irei tirar">
+                <figcaption>3° ano do ensino médio</figcaption>
+            </figure>
+    </section>
+
+    <section id="redes" class="img" data-aos-duration="1200">
+        <div id="container">
+            <div class="titulo center" id="ctt">CONTATOS</div>
+            <label for="ctt">Fique à vontade para entrar em contato!</label>
+            <p>vicenzocioato8@gmail.com</p>
+            <div id="social">
+                <a href="https://github.com/vicenzocioato"><i class="fa-brands fa-github"></i></a>
+                <a
+                    href="https://www.linkedin.com/in/vicenzo-cioato-27b153390?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                        class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="src/script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(); 
+    </script>
+</body>
+
+</html>
