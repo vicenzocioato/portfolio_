@@ -116,9 +116,7 @@ figure {
     width: 100%;
     height: 100%;
     z-index: 1;
-
     box-shadow: 10px 10px 0 blue;
-
     transition: 0.3s ease;
 }
 
@@ -242,43 +240,142 @@ button:hover {
     background-color: blue;
 }
 
+.grid {
+    margin-top: 60px;
+    width: 100%;
+}
 
-#skills {
+.titulo {
+    margin-left: 100px;
+}
+
+.tools {
+    grid-column: 1 / -1;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px solid #1c1c1c;
+    background: #070c12;
+    padding: 35px 20px 20px;
+    min-height: 150px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.lados {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto 1fr 1fr;
-    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: 100%;
+}
+
+.card h2 {
+    position: absolute;
+    top: -16px;
+    left: 20px;
+    padding: 0 10px;
+    background-color: #131313;
+    font-size: 20pt;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.icon {
+    width: 50px;
+    height: 10px;
+    background: #0e1620;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ffb3;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 10px 15px 20px blue;
+}
+
+#tools {
+    margin-top: 50px;
+    width: 100%;
 }
 
 .skill {
-    background-color: #111;
-    font-size: 50pt;
-    display: flex;
-    flex-direction: column;
     color: white;
-    border-radius: 12px;
-    height: 20vh;
-    width: 15vw;
-    margin-bottom: 50px;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s;
-    border: 2px solid blue;
+    font-size: 35pt;
+    text-align: center;
 }
 
-.skill:hover {
-    background-color: blue;
-    color: white;
+#tailwind-css {
+    height: 3rem;
+    width: 3rem;
+    fill: white;
 }
 
-.skill img {
-    height: 90%;
-    width: 90%;
+.skill {
+    position: relative;
 }
+
+.skill::after {
+    content: attr(data-name);
+    position: absolute;
+    left: 50%;
+    bottom: 115%;
+    transform: translateX(-50%);
+    background: #323030;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 10px;
+    font-weight: bolder;
+    border-radius: 4px;
+    white-space: nowrap;
+    line-height: 1;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+    z-index: 10;
+}
+
+.skill:hover::after {
+    opacity: 1;
+}
+
+@media (max-width: 800px) {
+    .lados {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+}
+
 
 #skills,
 .titulo {
     grid-column: 1 / -1;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    padding: 120px 8% 60px;
+}
+
+#skills .titulo {
+    margin-left: 0;
 }
 
 #title {
@@ -454,13 +551,14 @@ a>i {
 }
 
 #sobre {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    padding: 6% 5%;
+    padding: 160px 5% 80px;
 }
 
 #sobre aside {
-    width: 50vw;
+    width: min(100%, 760px);
     gap: 40px;
     font-size: 1.3rem;
     font-weight: 400;
@@ -474,14 +572,40 @@ a>i {
 
 #sobrettl {
     position: absolute;
-    top: 0;
+    top: 80px;
+    left: 5%;
+    margin-left: 0;
 }
+
+
+
+
 
 @media (max-width: 768px) {
 
     #sobre {
         display: flex;
         flex-direction: column;
+        padding: 100px 20px 50px;
+    }
+
+    #sobrettl {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin: 20px 0 40px;
+    }
+
+    #sobrettl::before {
+        left: 0;
+        transform: none;
+    }
+
+    #sobre aside {
+        width: 100%;
+        gap: 24px;
+        font-size: 1rem;
+        align-items: stretch;
     }
 
     #cursor,
@@ -563,14 +687,11 @@ a>i {
     }
 
     #skills {
-        grid-template-columns: 1fr;
-        padding-top: 40px;
+        padding: 100px 20px 40px;
     }
 
     .skill {
-        width: 80vw;
-        height: 120px;
-        margin-bottom: 20px;
+        font-size: 28pt;
     }
 
     .container-projetos {
@@ -583,30 +704,47 @@ a>i {
         width: 100%;
     }
 
+    #timeline {
+        margin-top: 0;
+    }
+
     #tl {
         height: auto;
         display: flex;
         flex-direction: column;
-        gap: 60px;
-        padding-top: 50px;
+        gap: 30px;
+        padding-top: 20px;
+        width: 100%;
     }
 
     .linha {
-        left: 20px;
+        left: 13px;
+        transform: none;
+    }
+
+    .item {
+        height: auto;
+        width: 100%;
+        padding-left: 50px;
     }
 
     .circulo {
-        left: 20px;
-        width: 30px;
-        height: 30px;
+        left: 0;
+        top: 18px;
+        transform: none;
+        width: 28px;
+        height: 28px;
     }
 
     .legenda {
-        position: relative;
-        left: 50px;
-        top: 0;
+        position: static;
         transform: none;
-        width: calc(100% - 70px);
+        width: 100%;
+    }
+
+    .legenda > p {
+        width: 100%;
+        max-width: 100%;
     }
 
     #titletl {

@@ -59,5 +59,3 @@ sections.forEach(section => {
   observert.observe(section);
 });
 
-
-
