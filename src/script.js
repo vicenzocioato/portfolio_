@@ -58,4 +58,3 @@ const observert = new IntersectionObserver((entries) => {
 sections.forEach(section => {
   observert.observe(section);
 });
-
