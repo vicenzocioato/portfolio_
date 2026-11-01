@@ -930,3 +930,65 @@ a>i {
         display: none;
     }
 }
+
+
+/* ===== Ajustes mobile ===== */
+@media (max-width: 768px) {
+    html {
+        overflow-x: hidden;
+        scroll-padding-top: 80px;
+    }
+
+    header {
+        flex-wrap: wrap;
+        gap: 6px 14px;
+        padding: 10px 8px;
+        font-size: 0.75rem;
+    }
+
+    /* início */
+    #conteudo {
+        margin-top: 30px;
+    }
+
+    .dwl {
+        width: auto;
+        align-self: center;
+        padding: 12px 32px;
+        margin-top: 24px;
+    }
+
+    /* títulos sempre alinhados à esquerda */
+    .titulo::before {
+        left: 0;
+        transform: none;
+    }
+
+    /* projetos */
+    #destaques {
+        padding: 100px 20px 40px;
+        align-items: stretch;
+    }
+
+    #title {
+        margin: 0 0 40px;
+    }
+
+    .projeto img {
+        height: 180px;
+        object-fit: cover;
+    }
+
+    /* contatos */
+    #redes {
+        padding: 80px 20px 50px;
+    }
+
+    #redes #container {
+        text-align: center;
+    }
+
+    #redes #container p {
+        word-break: break-all;
+    }
+}
