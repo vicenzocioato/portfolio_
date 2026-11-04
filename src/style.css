@@ -400,7 +400,7 @@ button:hover {
 }
 
 .projeto {
-    background-color: #111;
+    background-color: #070c12;
     border: solid 2px blue;
     box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.6);
     display: flex;
@@ -543,12 +543,10 @@ button:hover {
     user-select: none;
 }
 
-/* estágio à esquerda: cartão | círculo | ano */
 .item.esq .legenda { grid-column: 1; text-align: right; }
 .item.esq .legenda::before { right: -30px; }
 .item.esq .ano-lado { grid-column: 3; text-align: left; }
 
-/* estágio à direita: ano | círculo | cartão */
 .item.dir .legenda { grid-column: 3; text-align: left; }
 .item.dir .legenda::before { left: -30px; }
 .item.dir .ano-lado { grid-column: 1; text-align: right; }
@@ -762,7 +760,6 @@ a>i {
     }
 }
 
-/* ===== Experiência ===== */
 #experiencia .exp-card {
     border: 3px solid #1c1c1c;
     background: #070c12;
@@ -932,7 +929,6 @@ a>i {
 }
 
 
-/* ===== Ajustes mobile ===== */
 @media (max-width: 768px) {
     html {
         overflow-x: hidden;
@@ -946,7 +942,6 @@ a>i {
         font-size: 0.75rem;
     }
 
-    /* início */
     #conteudo {
         margin-top: 30px;
     }
@@ -958,13 +953,11 @@ a>i {
         margin-top: 24px;
     }
 
-    /* títulos sempre alinhados à esquerda */
     .titulo::before {
         left: 0;
         transform: none;
     }
 
-    /* projetos */
     #destaques {
         padding: 100px 20px 40px;
         align-items: stretch;
@@ -979,7 +972,6 @@ a>i {
         object-fit: cover;
     }
 
-    /* contatos */
     #redes {
         padding: 80px 20px 50px;
     }
